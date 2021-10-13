@@ -8,6 +8,7 @@
         <meta name="author" content="">
 
 
+
         <!--REPLACE TITLE WITH NAME-->
 
         <title>Life of an ICT | Kevin</title>
@@ -27,6 +28,7 @@
         <link href="css/aos.css" rel="stylesheet">
 
         <link href="css/templatemo-nomad-force.css" rel="stylesheet">
+
     </head>
     
     <body>
@@ -46,7 +48,7 @@
                 </div>
 
                 <div class="videoWrapper">
-                  <img src="images/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg" class="img-fluid news-detail-image" alt="">
+                <img src="images/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg" class="img-fluid news-detail-image" alt="">
                 </div>
 
                 <div class="overlay"></div>
@@ -135,7 +137,7 @@
                             <h2 class="mb-3" data-aos="fade-up">The Life of an ICT Student</h2>
 
                             <p data-aos="fade-up">
-                               For me, the life of an ICT student is like the beautiful waves of the ocean, sometimes it gets stormy, sometimes it's calm, and sometimes it's still. Programming takes practice, focus, patience, hardwork, and creativity to make a masterpiece. It's like art but in codes. You type in the paint, every stroke and brush is like every code that you put in. Every mistake is just a chance of making it into a full functioning app. 
+                            For me, the life of an ICT student is like the beautiful waves of the ocean, sometimes it gets stormy, sometimes it's calm, and sometimes it's still. Programming takes practice, focus, patience, hardwork, and creativity to make a masterpiece. It's like art but in codes. You type in the paint, every stroke and brush is like every code that you put in. Every mistake is just a chance of making it into a full functioning app. 
 
 
                             </p>
@@ -149,7 +151,7 @@
                             <h2 class="mb-3" data-aos="fade-up">Advices for future ICT Students</h2>
 
                             <p data-aos="fade-up">
-                               Word of advice for the future ICT students out there, just have fun in each problem you encounter, learning shouldn't be a burden but a process of testing what are you're capabilities. There will be times that will make you feel heavy and hopeless, but in those times, is an opportunity for you to get up and stand strong. "Don't shoot for the target but shoot up above the stars in the sky, aim higher, sūn zi." That's what always my grandfather would say to me. So in short, have fun and be creative and always think outside the box.
+                            Word of advice for the future ICT students out there, just have fun in each problem you encounter, learning shouldn't be a burden but a process of testing what are you're capabilities. There will be times that will make you feel heavy and hopeless, but in those times, is an opportunity for you to get up and stand strong. "Don't shoot for the target but shoot up above the stars in the sky, aim higher, sūn zi." That's what always my grandfather would say to me. So in short, have fun and be creative and always think outside the box.
 
                             </p>
 
@@ -159,29 +161,66 @@
                 </div>
             </section>
 
-        </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12">
-                        <h5 class="text-white">
-                            <i class="bi-geo-alt-fill me-2"></i>
-                            Republic of the Philippines, Cavite
-                        </h5>
-
-                        <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
-                            ICTLife@blog.com
-                        </a>
-                    </div>
-
+            <!--COMMENT BOX-->
+            <section>
+                <div class="rt-container">
+                      <div class="col-rt-12">
+                          <div class="Scriptcontent">
+                          
+            <!-- partial:index.partial.html -->
+            <section id="app">
+                <div class="container">
+                  <div class="row">
                     <div class="col-6">
-                        <p class="copyright-text mb-0">Submitted by Group 3 | ICT-21 
-                    
+                      <div class="comment">
+                    <p v-for="items in item" v-text="items"></p>
+                      </div><!--End Comment-->
+                      </div><!--End col -->
+                      </div><!-- End row -->
+                  <div class="row">
+                    <div class="col-6">
+                  <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                      <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                    </div><!-- End col -->
+                  </div><!--End Row -->
+                </div><!--End Container -->
+              </section><!-- end App -->
+            <!-- partial -->
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+            <script  src="js/script.js"></script>
+              
+                        </div>
                     </div>
                 </div>
-        </footer>
+            </section>
+            
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h5 class="text-white">
+                        <i class="bi-geo-alt-fill me-2"></i>
+                        Republic of the Philippines, Cavite
+                    </h5>
+
+                    <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
+                        ICTLife@blog.com
+                    </a>
+                </div>
+
+                <div class="col-6">
+                    <p class="copyright-text mb-0">Submitted by Group 3 | ICT-21 
+                
+                </div>
+            </div>
+    </footer>
+
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
